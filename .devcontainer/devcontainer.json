@@ -1,0 +1,4 @@
+{
+    "onCreateCommand": "npm install",
+    "postCreateCommand": ""
+  }

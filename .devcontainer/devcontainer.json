@@ -1,4 +1,21 @@
 {
-    "onCreateCommand": "npm install",
-    "postCreateCommand": ""
-  }
+  "postAttachCommand": {
+    "server": "npm start",
+  },
+
+  "portsAttributes": {
+    "3000": {
+      "label": "Application",
+      "onAutoForward": "openPreview"
+    }
+  },
+
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["index.js"]
+    }
+  },
+  "onCreateCommand": "npm install",
+  "postCreateCommand": "",
+  "hostRequirements": {"cpus": 4}
+}

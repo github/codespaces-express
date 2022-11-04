@@ -1,21 +1,24 @@
 {
-  "postAttachCommand": {
-    "server": "npm start",
+  "hostRequirements": {
+    "cpus": 4
   },
-
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "npm install",
+  "postCreateCommand": "",
+  "postAttachCommand": {
+    "server": "npm start"
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "index.js"
+      ]
+    }
+  },
   "portsAttributes": {
     "3000": {
       "label": "Application",
       "onAutoForward": "openPreview"
     }
-  },
-
-  "customizations": {
-    "codespaces": {
-      "openFiles": ["index.js"]
-    }
-  },
-  "onCreateCommand": "npm install",
-  "postCreateCommand": "",
-  "hostRequirements": {"cpus": 4}
+  }
 }

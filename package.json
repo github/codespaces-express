@@ -3,9 +3,9 @@
     "start": "nodemon index.js"
   },
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^5.1.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.10"
   }
 }
